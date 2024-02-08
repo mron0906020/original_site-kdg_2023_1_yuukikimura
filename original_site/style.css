@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+img {
+    max-width: 100%;
+}
+
+/* ヘッダー */
+
+.header {
+    height: 100vh;
+    background-image: url("./images/image1.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.nav {
+    background-color: #fff;
+    display: inline-block;
+    padding: 30px 0 30px 30px;
+
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+
+    margin-inline: auto;
+    display: flex;
+    padding-block: 20px;
+
+    position: relative;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 32px;
+    vertical-align: baseline;
+}
+
+.btn-burger {
+    display: none;
+    /*768px以上では使用しない */
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header-catchcopy {
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    font-size: 40px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.header-contact {
+    background-color: #F5E7BC;
+    padding-block: 32px;
+}
+
+/* 事業紹介 */
+
+.container-business {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.business-title {
+    font-size: 70px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.business-logo {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #DAC689;
+}
+
+.countainer-business-text {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.countainer-business-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9E8846;
+    padding: 20px;
+    border-radius: 30px;
+    transition: all .5s;
+    width: 400px;
+    margin: 40px auto;
+
+}
+
+.countainer-business-button:hover {
+    background-color: #F5E7BC;
+}
+
+/* コンセプト */
+
+.container-consept {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.consept-title {
+    font-size: 70px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.consept-logo {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #DAC689;
+}
+
+.countainer-consept-text {
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.consept-image {
+    width: 640px;
+    margin: 0 20px 0 20px;
+    padding: 0;
+}
+
+.consept-text {
+    margin-top: 40px;
+    width: 40%;
+    margin: auto;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 20px;
+
+}
+
+.countainer-consept-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9E8846;
+    padding: 20px;
+    border-radius: 30px;
+    transition: all .5s;
+    width: 400px;
+    margin: 40px auto;
+}
+
+.countainer-consept-button:hover {
+    background-color: #F5E7BC;
+}
+
+/* 会社概要 */
+
+.container-company {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.company-title {
+    font-size: 70px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.company-logo {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #DAC689;
+}
+
+.countainer-company-text {
+    margin-top: 40px;
+}
+
+.countainer-company-table {
+    margin: auto;
+    border-spacing: 10px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/* お問い合わせ */
+.container-inquiry {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    background-image: url(./images/image3.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    height: 400px;
+}
+
+.inquiry-title {
+    font-size: 40px;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 50px;
+}
+
+.inquiry-text {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.countainer-inquiry-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9E8846;
+    padding: 20px;
+    border-radius: 30px;
+    transition: all .5s;
+    width: 400px;
+    margin: 50px auto;
+}
+
+.countainer-inquiry-button:hover {
+    background-color: #F5E7BC;
+}
+
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    padding-top: 20px;
+    height: 50px;
+    text-align: center;
+    background-color: #DAC689;
+    color: #fff;
+
+}
+
+/*ここからタブレットサイズ（画面の横幅が上限1020px）*/
+@media screen and (max-width: 1020px) {
+    .header-catchcopy {
+        top: 500px;
+        left: 200px;
+        font-size: 40px;
+
+    }
+
+
+    .business-title {
+        font-size: 50px;
+    }
+
+
+    .business-logo {
+        font-size: 36px;
+    }
+
+    .countainer-business-text {
+        font-size: 18px;
+    }
+
+    .consept-title {
+        font-size: 50px;
+    }
+
+    .consept-logo {
+        font-size: 36px;
+    }
+
+    .consept-text {
+        font-size: 18px;
+    }
+
+    .company-title {
+        font-size: 50px;
+    }
+
+    .company-logo {
+        font-size: 36px;
+    }
+
+    .countainer-company-table {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    /* ハンバーガーボタン */
+
+    /*ハンバーガーアイコン*/
+    .btn-burger {
+        cursor: pointer;
+        display: block;
+        width: 56px;
+        height: 60px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    /*ハンバーガーアイコンを作る三本線*/
+    .icon,
+    .icon:before,
+    .icon:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        /*線の太さ*/
+        width: 35px;
+        /*線の長さ*/
+        background-color: #444;
+        border-radius: 2px;
+        display: block;
+        content: '';
+        cursor: pointer;
+        margin: auto;
+    }
+
+    /*三本線の間隔*/
+    .icon:before {
+        top: 15px;
+        bottom: auto;
+    }
+
+    .icon:after {
+        top: -15px;
+        bottom: auto;
+    }
+
+    /*チェックボックス非表示*/
+    .nav-toggle {
+        display: none;
+    }
+
+    /*アイコンをクリックしたら*/
+    .nav-toggle:checked~.btn-burger .icon {
+        background: transparent;
+    }
+
+    .nav-toggle:checked~.btn-burger .icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked~.btn-burger .icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .icon,
+    .icon:before,
+    .icon:after {
+        transition: all .8s;
+    }
+
+    .nav {
+        background-color: #F5E7BC;
+        ;
+
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .nav-list a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: none;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-toggle:checked~.nav .nav-list {
+        display: block;
+    }
+
+    header {
+        padding: 30px 0 0;
+    }
+
+    .header-contact {
+        background-color: transparent;
+    }
+
+    .logo {
+        width: auto;
+        margin: 0 0 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-toggle:checked~.nav .nav-list {
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        align-items: center;
+    }
+
+    .nav {
+        height: 75px;
+    }
+
+    .nav-list {
+        display: none;
+        
+    }
+
+    .nav-list li:not(:last-child) {
+        border-right: 1px solid #fff;
+    }
+    .header-nav {
+        font-size: 10px;
+    }
+    
+    
+    
+    .header {
+        background-position: top 100px center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .business-title {
+        font-size: 40px;
+    }
+    
+    .business-logo {
+        font-size: 20px;
+    }
+    
+    .countainer-business-text {
+        font-size: 16px;
+    }
+    
+    .consept-title {
+        font-size: 40px;
+    }
+    
+    .consept-logo {
+        font-size: 20px;
+    }
+    
+    .countainer-consept-text {
+        display: block;
+        font-size: 16px;
+    }
+    
+    .consept-image {
+        width: auto;
+    }
+    
+    .consept-text {
+        margin-top: 40px;
+        width: auto;
+    }
+    
+    
+    .company-title {
+        font-size: 40px;
+    }
+    
+    .company-logo {
+        font-size: 20px;
+    }
+    
+    .countainer-company-table {
+        font-size: 16px;
+    }
+}
+
